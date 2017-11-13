@@ -41,10 +41,10 @@ printf "$crxfolder/logs/$logfile\n"
 ## Start AEM
 starttime="$(date)"
 printf "AEM Startup in Progress.\n"
-$aemfolder/bin/start
+$crxfolder/bin/start
 echo "AEM Startup at: $starttime" >> $crxfolder/logs/$logfile
 
 now=`date '+%d/%m/%Y_%H:%M:%S'`
 
 #Send Report to the people
-mail -r aem-compaction@comapany.com -s "${PROJECT}: ${Env} | ${now}" "${ADMIN_EMAIL}" < ${logfile}
+mail -r aem-compaction@comapany.com -s "${PROJECT}: ${Env} | ${now}" "${ADMIN_EMAIL}" < $crxfolder/logs/$logfile
