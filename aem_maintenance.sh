@@ -1,7 +1,7 @@
 #!/bin/bash
 current="$(date +'%d-%m-%Y')"
 logfile="compaction-$current.log"
-homefolder="/data/cq"
+homefolder="<Folder where Crx directory is installed>"
 crxfolder="$homefolder/crx-quickstart"
 oakrun="$homefolder/oak-run.jar"
 PROJECT="MYPROJECT"
